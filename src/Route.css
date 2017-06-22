@@ -1,0 +1,27 @@
+.Route {
+  margin: 30px auto;
+  width: 300px;
+}
+
+.Route table .header {
+  background-color: gray;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.Route table th {
+  padding: 10px 10px 10px 20px;
+}
+
+.Route table tr {
+  background-color: lightgray;
+}
+
+.Route table td {
+  padding: 4px;
+}
+
+.Route table .number {
+  text-align: left;
+
+}
