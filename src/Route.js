@@ -11,7 +11,6 @@ class RouteItem extends Component {
 
   showMarkerOnMap(event) {
     event.preventDefault();
-    // TODO
   }
 
   render() {
@@ -27,9 +26,14 @@ class RouteItem extends Component {
 class Route extends Component {
 
   render() {
-    const routes = this.props.routes.map((routeInfo) =>
-      <RouteItem route={routeInfo.name} number={this.props.totals[routeInfo.id]} />
-    );
+    let routes = undefined;
+    if (this.props.vehicleRoutes.length != 0) {
+      routes = this.props.vehicleRoutes.map((routeInfo) =>
+        <RouteItem route={routeInfo.name} number={this.props.vehicleCount[routeInfo.id]} />
+      );
+    } else {
+      routes = <tr><td colspan="2">Loading Routes...</td></tr>
+    }
 
     return (
       <div className="Route">

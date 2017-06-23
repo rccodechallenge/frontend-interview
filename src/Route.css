@@ -1,6 +1,6 @@
 .Route {
   margin: 30px auto;
-  width: 300px;
+  display: inline-block;
 }
 
 .Route table .header {

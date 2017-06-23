@@ -17,6 +17,21 @@
   font-size: large;
 }
 
+.App-routes {
+  display: inline-block;
+}
+.App-map {
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0px auto;
+  display: inline-block;
+  position: relative;
+  border: 2px solid gray;
+  vertical-align: top;
+  margin-top: 32px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
